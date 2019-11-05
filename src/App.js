@@ -15,7 +15,7 @@ function App() {
         <div className="topRow">
           <div className="home">
             <h2 className="home__name">Lions</h2>
-            <div className="home__score">{homeScore}</div>
+            <div className="home__score">{homeScore}</div>iv clas
           </div>
           <div className="timer">00:03</div>
           <div className="away">
