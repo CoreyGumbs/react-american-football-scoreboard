@@ -7,7 +7,15 @@ const Buttons = props => {
 
     return (
         <section className="buttons">
-            <BtnContainer btnClass={'homeButtons'}  teamScore={homeScore} setTeamScore={setHomeScore}/>
+            <BtnContainer 
+                btnClass={'homeButtons'}  
+                teamScore={homeScore} 
+                setTeamScore={setHomeScore}
+                scoreTDClass={'homeButtons__touchdown'}
+                scoreFGClass={'homeButtons__fieldGoal'}
+                touchDown = {'Home Touchdown'}
+                fieldGoal ={'Home Field Goal'}
+            />
             <BtnContainer btnClass={'awayButtons'}  teamScore={awayScore} setTeamScore={setAwayScore}/>
         </section>
     )

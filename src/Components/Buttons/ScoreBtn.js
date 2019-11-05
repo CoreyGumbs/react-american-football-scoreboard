@@ -2,9 +2,9 @@ import React from 'react';
 
 
 const ScoreBtn = props => {
-    const {btnClass, setScore = props;
+    const {scoreClass, teamScore, setTeamScore,} = props;
 
     return(
-        <button className={btnClass} onClick={}>{scoreType}</button>
+        <button className={scoreClass} onClick={}>{scoreType}</button>
     )
 }

@@ -2,11 +2,13 @@ import React from 'react';
 import ScoreBtn from './ScoreBtn';
 
 const BtnContainer = props => {
-    const {btnClass} =  props;
+    const {btnClass,  teamScore,  setTeamScore, scoreTDClass, scoreFGClass, touchDown,
+    fieldGoal} =  props;
 
     return (
         <div className={btnClass}>
-            btn
+            <ScoreBtn scoreClass={scoreTDClass} teamScore={teamScore} setTeamScore = {setTeamScore} scoreType={touchDown} />
+            <ScoreBtn scoreClass={scoreFGClass} teamScore={teamScore} setTeamScore = {setTeamScore} scoreType={fieldGoal} />
         </div>
     );
 }
