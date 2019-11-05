@@ -6,7 +6,6 @@ import Timer from '../Timer/Timer';
 const TopRow = props => {
     const {homeScore, awayScore, homeTeamName, awayTeamName} = props
 
-    console.log(awayTeamName);
     return(
         <div className="topRow">
             <Team  
