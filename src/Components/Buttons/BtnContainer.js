@@ -7,8 +7,8 @@ const BtnContainer = props => {
 
     return (
         <div className={btnClass}>
-            <ScoreBtn scoreClass={scoreTDClass} teamScore={teamScore} setTeamScore = {setTeamScore} scoreType={touchDown} />
-            <ScoreBtn scoreClass={scoreFGClass} teamScore={teamScore} setTeamScore = {setTeamScore} scoreType={fieldGoal} />
+            <ScoreBtn scoreClass={scoreTDClass} teamScore={teamScore} setTeamScore = {setTeamScore} scoreAmount={7} scoreType={touchDown} />
+            <ScoreBtn scoreClass={scoreFGClass} teamScore={teamScore} setTeamScore = {setTeamScore} scoreAmount={3} scoreType={fieldGoal} />
         </div>
     );
 }
