@@ -12,7 +12,7 @@ function App() {
   const [awayTeam, setAwayTeam] = useState('Tigers');
 
   const setScore = (name, points) => {
-
+    console.log(name, points);
     if(name  === homeTeam){
       setHomeScore(homeScore + points);
     }else if (name === awayTeam){
@@ -24,7 +24,14 @@ function App() {
   return (
     <div className="container">
       <ScoreBoard  homeScore={homeScore} awayScore={awayScore} homeTeamName={homeTeam} awayTeamName={awayTeam}/>
-      <Buttons homeScore={homeScore} setHomeScore={setHomeScore} awayScore={awayScore} setAwayScore={setAwayScore} setScore={setScore} />
+      <Buttons 
+        homeScore={homeScore} 
+        setHomeScore={setHomeScore} 
+        awayScore={awayScore} setAwayScore={setAwayScore} 
+        setScore={setScore} 
+        homeTeamName={homeTeam} 
+        awayTeamName={awayTeam} 
+      />
     </div>
   );
 }

@@ -3,21 +3,23 @@ import BtnContainer from './BtnContainer';
 
 const Buttons = props => {
 
-    const {homeScore, setHomeScore, awayScore, setAwayScore, setScore} = props;
+    const {homeScore, awayScore, setAwayScore, setScore, homeTeamName,
+    awayTeamName} = props;
 
     return (
         <section className="buttons">
             <BtnContainer 
                 btnClass={'homeButtons'}  
                 teamScore={homeScore} 
-                setTeamScore={setHomeScore}
+    
                 scoreTDClass={'homeButtons__touchdown'}
                 scoreFGClass={'homeButtons__fieldGoal'}
                 touchDown = {'Home Touchdown'}
                 fieldGoal ={'Home Field Goal'}
                 setScore = {setScore}
+                teamName={homeTeamName} 
             />
-            <BtnContainer 
+            {/* <BtnContainer 
                 btnClass={'awayButtons'}  
                 teamScore={awayScore} 
                 setTeamScore={setAwayScore}
@@ -25,7 +27,7 @@ const Buttons = props => {
                 scoreFGClass={'awayButtons__fieldGoal'}
                 touchDown = {'Away Touchdown'}
                 fieldGoal ={'Away Field Goal'}
-            />
+            /> */}
         </section>
     )
 }
