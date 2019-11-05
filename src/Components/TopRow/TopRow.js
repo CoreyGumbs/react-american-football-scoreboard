@@ -1,10 +1,11 @@
 import React from 'react';
+import Timer from '../Timer/Timer';
 
 
 const TopRow = () => {
     return(
         <div className="topRow">
-            top row
+            <Timer />
         </div>
     )
 }
