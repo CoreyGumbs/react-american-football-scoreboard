@@ -2,8 +2,9 @@ import React from 'react';
 import ScoreBtn from './ScoreBtn';
 
 const BtnContainer = props => {
+    
     const {btnClass,  teamScore,  setTeamScore, scoreTDClass, scoreFGClass, touchDown,
-    fieldGoal} =  props;
+    fieldGoal, test} =  props;
 
     return (
         <div className={btnClass}>

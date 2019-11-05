@@ -4,10 +4,10 @@ import BottomRow from '../BottomRow/BottomRow';
 
 
 const ScoreBoard = props => {
-    const  {homeScore, awayScore} =  props;
+    const  {homeScore, awayScore, homeTeamName, awayTeamName} =  props;
     return(
         <section className="scoreboard">
-            <TopRow  homeScore={homeScore} awayScore={awayScore}  />
+            <TopRow  homeScore={homeScore} awayScore={awayScore} homeTeamName={homeTeamName} awayTeamName={awayTeamName}  />
              <BottomRow />
         </section>
     )
