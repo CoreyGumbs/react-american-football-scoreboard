@@ -26,7 +26,7 @@ function App() {
         </div>
         <BottomRow />
       </section> */}
-      <Buttons setHomeScore={setHomeScore} setAwayScore={setAwayScore} />
+      <Buttons homeScore={homeScore} setHomeScore={setHomeScore} awayScore={awayScore} setAwayScore={setAwayScore} />
       {/* <section className="buttons">
         <div className="homeButtons">
           <button className="homeButtons__touchdown" onClick={() => setHomeScore(homeScore + 7)}>Home Touchdown</button>
