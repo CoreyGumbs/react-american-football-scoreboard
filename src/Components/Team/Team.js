@@ -3,8 +3,8 @@ import React, {useState} from 'react';
 
 const Team = (props) => {
 
-    const {parentClass, headerClass, scoreClass, teamName} = props;
-    const [score, setScore] = useState(0);
+    const {parentClass, headerClass, scoreClass, teamName, score} = props;
+    
 
     return(
 
