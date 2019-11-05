@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 
 const Team = (props) => {
 
     const {parentClass, headerClass, scoreClass, teamName, score} = props;
     
-
     return(
 
         <div className={parentClass}>

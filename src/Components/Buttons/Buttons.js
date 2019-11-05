@@ -3,7 +3,9 @@ import React from 'react';
 
 const Buttons = () => {
     return (
-        <div>Buttons Holder</div>
+        <section className="buttons">
+            Buttons Holder
+        </section>
     )
 }
 
