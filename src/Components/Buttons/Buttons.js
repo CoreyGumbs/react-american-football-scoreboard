@@ -16,7 +16,15 @@ const Buttons = props => {
                 touchDown = {'Home Touchdown'}
                 fieldGoal ={'Home Field Goal'}
             />
-            <BtnContainer btnClass={'awayButtons'}  teamScore={awayScore} setTeamScore={setAwayScore}/>
+            <BtnContainer 
+                btnClass={'awayButtons'}  
+                teamScore={awayScore} 
+                setTeamScore={setAwayScore}
+                scoreTDClass={'awayButtons__touchdown'}
+                scoreFGClass={'awayButtons__fieldGoal'}
+                touchDown = {'Away Touchdown'}
+                fieldGoal ={'Away Field Goal'}
+            />
         </section>
     )
 }

@@ -10,4 +10,4 @@ const ScoreBtn = props => {
 }
 
 
-export default ScoreBtn;
+export default ScoreBtn; 
